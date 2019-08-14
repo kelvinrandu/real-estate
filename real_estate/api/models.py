@@ -7,7 +7,7 @@ class Property(models.Model):
     address = models.CharField(max_length=255)
     city = models.CharField(max_length=255)
     county = models.CharField(max_length=100)
-    # picture = models.ImageField()
+    picture = models.ImageField()
 
     def __str__(self):
         return self.propertyName
